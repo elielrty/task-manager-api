@@ -1,0 +1,243 @@
+{
+  "errors": {
+    "400": "Falha na requisição",
+    "401": "Falha na autenticação",
+    "403": "Recurso não autorizado",
+    "404": "Recurso não encontrado",
+    "409": "Recurso duplicado",
+    "500": "Ocorreu um erro inesperado",
+    "tenants": {
+      "404": "Banco de dados não encontrado"
+    },
+    "auth": {
+      "google": {
+        "404": "Sua conta nao foi convidada, procure um administrador.",
+        "500": "Ocorreu um erro ao tentar autenticar com o Google"
+      },
+      "govbr": {
+        "500": "Ocorreu um erro ao tentar autenticar com o GOVBR"
+      },
+      "GET": {
+        "500": "Ocorreu um erro ao tentar obter os dados de autenticação"
+      }
+    },
+    "company": {
+      "404": "Dados da Empresa não encontrada"
+    },
+    "stakeholder": {
+      "404": "stakeholder não encontrado",
+      "409": "stakeholder já existente na base de dados",
+      "POST": {
+        "500": "Ocorreu um erro ao tentar criar um stakeholder"
+      },
+      "GET": {
+        "500": "Ocorreu um erro ao tentar obter um stakeholder"
+      },
+      "LIST": {
+        "500": "Ocorreu um erro ao tentar listar os stakeholders"
+      },
+      "PUT": {
+        "500": "Ocorreu um erro ao tentar atualizar um stakeholder"
+      },
+      "DELETE": {
+        "500": "Ocorreu um erro ao tentar deletar um stakeholder"
+      }
+    },
+    "files": {
+      "POST": {
+        "500": "Ocorreu um erro ao tentar gerar url do arquivo."
+      }
+    },
+    "attendanceTypes": {
+      "404": "Tipo de atendimento não encontrado",
+      "409": "Tipo de atendimento já existente na base de dados",
+      "POST": {
+        "500": "Ocorreu um erro ao tentar criar um tipo de atendimento"
+      },
+      "GET": {
+        "500": "Ocorreu um erro ao tentar obter um tipo de atendimento"
+      },
+      "LIST": {
+        "500": "Ocorreu um erro ao tentar listar os tipos de atendimento"
+      },
+      "PUT": {
+        "500": "Ocorreu um erro ao tentar atualizar um tipo de atendimento"
+      },
+      "DELETE": {
+        "500": "Ocorreu um erro ao tentar deletar um tipo de atendimento"
+      }
+    },
+    "people": {
+      "403": "Pessoa não autorizada",
+      "404": "Pessoa não encontrada",
+      "409": "Pessoa já existente na base de dados",
+      "POST": {
+        "500": "Ocorreu um erro ao tentar criar uma pessoa"
+      },
+      "GET": {
+        "500": "Ocorreu um erro ao tentar obter uma pessoa"
+      },
+      "LIST": {
+        "500": "Ocorreu um erro ao tentar listar as pessoas"
+      },
+      "DASHBORD": {
+        "500": "Ocorreu um erro ao tentar carregar o painel"
+      },
+      "PUT": {
+        "500": "Ocorreu um erro ao tentar atualizar uma pessoa"
+      },
+      "DELETE": {
+        "500": "Ocorreu um erro ao tentar deletar uma pessoa"
+      }
+    },
+    "google": {
+      "404": "Pessoa não encontrada no google workspace"
+    },
+    "tokens": {
+      "401": "Token de autorização inválido.",
+      "404": "Token não encontrado",
+      "409": "Token já existente na base de dados",
+      "POST": {
+        "500": "Ocorreu um erro ao tentar criar um token"
+      },
+      "GET": {
+        "500": "Ocorreu um erro ao tentar obter um token"
+      },
+      "LIST": {
+        "500": "Ocorreu um erro ao tentar listar os tokens"
+      },
+      "PUT": {
+        "500": "Ocorreu um erro ao tentar atualizar um token"
+      },
+      "DELETE": {
+        "500": "Ocorreu um erro ao tentar deletar um token"
+      }
+    },
+    "comarcas": {
+      "404": "Comarca não encontrada",
+      "409": "Comarca já existente na base de dados",
+      "POST": {
+        "500": "Ocorreu um erro ao tentar criar uma comarca"
+      },
+      "GET": {
+        "500": "Ocorreu um erro ao tentar obter uma comarca"
+      },
+      "LIST": {
+        "500": "Ocorreu um erro ao tentar listar as comarcas"
+      },
+      "PUT": {
+        "500": "Ocorreu um erro ao tentar atualizar uma comarca"
+      },
+      "DELETE": {
+        "409": "Não é possível excluir a Comarca porque ela está associada a alguma Vara existente",
+        "500": "Ocorreu um erro ao tentar deletar uma comarca"
+      }
+    },
+    "varas": {
+      "404": "Vara não encontrada",
+      "409": "Vara já existente na base de dados",
+      "POST": {
+        "500": "Ocorreu um erro ao tentar criar uma vara"
+      },
+      "GET": {
+        "500": "Ocorreu um erro ao tentar obter uma vara"
+      },
+      "LIST": {
+        "500": "Ocorreu um erro ao tentar listar as varas"
+      },
+      "PUT": {
+        "500": "Ocorreu um erro ao tentar atualizar uma vara"
+      },
+      "DELETE": {
+        "409": "Não é possível excluir a Vara porque ela está associada a algum Balcão existente",
+        "500": "Ocorreu um erro ao tentar deletar uma vara"
+      }
+    },
+    "desks": {
+      "404": "Balcão não encontrado",
+      "409": "Balcão já existente na base de dados",
+      "POST": {
+        "500": "Ocorreu um erro ao tentar criar um balcão"
+      },
+      "GET": {
+        "500": "Ocorreu um erro ao tentar obter um balcão"
+      },
+      "LIST": {
+        "500": "Ocorreu um erro ao tentar listar os balços"
+      },
+      "PUT": {
+        "500": "Ocorreu um erro ao tentar atualizar um balcão"
+      },
+      "DELETE": {
+        "500": "Ocorreu um erro ao tentar deletar um balcão"
+      }
+    },
+    "attendances": {
+      "404": "Atendimento não encontrado",
+      "409": "Atendimento já existente na base de dados",
+      "POST": {
+        "500": "Ocorreu um erro ao tentar criar um atendimento"
+      },
+      "GET": {
+        "500": "Ocorreu um erro ao tentar obter um atendimento"
+      },
+      "LIST": {
+        "500": "Ocorreu um erro ao tentar listar os atendimentos"
+      },
+      "PUT": {
+        "500": "Ocorreu um erro ao tentar atualizar um atendimento"
+      },
+      "DELETE": {
+        "500": "Ocorreu um erro ao tentar deletar um atendimento"
+      },
+      "code": {
+        "404": "Código de atendimento inválido",
+        "500": "Ocorreu um erro com o código do atendimento"
+      }
+    },
+    "dialogFlow": {
+      "POST": {
+        "500": "Ocorreu um erro ao tentar utilizar o dialogFlow"
+      },
+      "intentSettings": {
+        "404": "Configuração do intent do dialogFlow não encontrada",
+        "409": "Frase de intent já existente na base de dados",
+        "500": "Ocorreu um erro ao tentar utilizar o modulo de configuração do intent do dialogFlow",
+        "POST": {
+          "500": "Ocorreu um erro ao tentar adicionar uma configuração de um intent do dialogFlow"
+        },
+        "PUT": {
+          "500": "Ocorreu um erro ao tentar atualizar uma configuração de um intent do dialogFlow"
+        },
+        "LIST": {
+          "500": "Ocorreu um erro ao tentar listar as configurações de um intent do dialogFlow"
+        },
+        "GET": {
+          "500": "Ocorreu um erro ao tentar obter uma configuração de um intent do dialogFlow"
+        },
+        "DELETE": {
+          "500": "Ocorreu um erro ao tentar deletar uma configuração de um intent do dialogFlow"
+        }
+      }
+    },
+    "rating": {
+      "404": "Avaliação não encontrada",
+      "409": "Avaliação já existente na base de dados",
+      "POST": {
+        "500": "Ocorreu um erro ao tentar criar uma avaliação"
+      },
+      "GET": {
+        "500": "Ocorreu um erro ao tentar obter uma avaliação"
+      },
+      "LIST": {
+        "500": "Ocorreu um erro ao tentar listar as avaliações"
+      },
+      "PUT": {
+        "500": "Ocorreu um erro ao tentar atualizar uma avaliação"
+      },
+      "DELETE": {
+        "500": "Ocorreu um erro ao tentar deletar uma avaliação"
+      }
+    }
+  }
+}

@@ -1,0 +1,243 @@
+{
+  "errors": {
+    "400": "Failure in field validation",
+    "401": "Not authorized",
+    "403": "Resource forbidden",
+    "404": "Resource not found",
+    "409": "Duplicate resource",
+    "500": "An unexpected error occurred",
+    "tenants": {
+      "404": "Database not found"
+    },
+    "auth": {
+      "google": {
+        "404": "Your account was not invited, contact an administrator.",
+        "500": "An error occurred while trying to authenticate with Google"
+      },
+      "govbr": {
+        "500": "An error occurred while trying to authenticate with GOVBR"
+      },
+      "GET": {
+        "500": "An error occurred while trying to get the authentication data"
+      }
+    },
+    "company": {
+      "404": "Company not found"
+    },
+    "stakeholder": {
+      "404": "stakeholder not found",
+      "409": "stakeholder already exists in database",
+      "POST": {
+        "500": "An error occurred while trying to create an stakeholder"
+      },
+      "GET": {
+        "500": "An error occurred while trying to get an stakeholder"
+      },
+      "LIST": {
+        "500": "An error occurred while trying to list stakeholders"
+      },
+      "PUT": {
+        "500": "An error occurred while trying to update an stakeholder"
+      },
+      "DELETE": {
+        "500": "An error occurred while trying to delete an stakeholder"
+      }
+    },
+    "files": {
+      "POST": {
+        "500": "An error occurred while trying to generate the url of the file."
+      }
+    },
+    "attendanceTypes": {
+      "404": "type of attendance not found",
+      "409": "type of attendance  already exists in database",
+      "POST": {
+        "500": "An error occurred while trying to create an type of attendance"
+      },
+      "GET": {
+        "500": "An error occurred while trying to get an type of attendance "
+      },
+      "LIST": {
+        "500": "An error occurred while trying to list types of attendances"
+      },
+      "PUT": {
+        "500": "An error occurred while trying to update an type of attendance"
+      },
+      "DELETE": {
+        "500": "An error occurred while trying to delete an type of attendance"
+      }
+    },
+    "people": {
+      "403": "person not authorized",
+      "404": "person not found",
+      "409": "person already existing in the database",
+      "POST": {
+        "500": "An error occurred while trying to create a person"
+      },
+      "GET": {
+        "500": "An error occurred while trying to get a person"
+      },
+      "DASHBORD": {
+        "500": "An error occurred when trying to load the dashboard"
+      },
+      "LIST": {
+        "500": "An error occurred while trying to list people"
+      },
+      "PUT": {
+        "500": "An error occurred while trying to update a person"
+      },
+      "DELETE": {
+        "500": "An error occurred while trying to delete a person"
+      }
+    },
+    "google": {
+      "404": "person not found in google workspace"
+    },
+    "tokens": {
+      "401": "Authorization token is invalid",
+      "404": "Token not found",
+      "409": "Token already exists in database",
+      "POST": {
+        "500": "An error occurred while trying to create an token"
+      },
+      "GET": {
+        "500": "An error occurred while trying to get an token"
+      },
+      "LIST": {
+        "500": "An error occurred while trying to list tokens"
+      },
+      "PUT": {
+        "500": "An error occurred while trying to update an token"
+      },
+      "DELETE": {
+        "500": "An error occurred while trying to delete an token"
+      }
+    },
+    "comarcas": {
+      "404": "Comarca not found",
+      "409": "Comarca already existing in the database",
+      "POST": {
+        "500": "An error occurred while trying to create a comarca"
+      },
+      "GET": {
+        "500": "An error occurred while trying to get a comarca"
+      },
+      "LIST": {
+        "500": "An error occurred while trying to list comarcas"
+      },
+      "PUT": {
+        "500": "An error occurred while trying to update a comarca"
+      },
+      "DELETE": {
+        "409": "Cannot delete the Comarca because she is associated with some existing Vara",
+        "500": "An error occurred while trying to delete a comarca"
+      }
+    },
+    "varas": {
+      "404": "Court not found",
+      "409": "Court already existing in the database",
+      "POST": {
+        "500": "An error occurred while trying to create a vara"
+      },
+      "GET": {
+        "500": "An error occurred while trying to get a vara"
+      },
+      "LIST": {
+        "500": "An error occurred while trying to list varas"
+      },
+      "PUT": {
+        "500": "An error occurred while trying to update a vara"
+      },
+      "DELETE": {
+        "409": "Cannot delete the Vara because she is associated with some existing Desk",
+        "500": "An error occurred while trying to delete a vara"
+      }
+    },
+    "desks": {
+      "404": "Desk not found",
+      "409": "Desk already existing in the database",
+      "POST": {
+        "500": "An error occurred while trying to create a desk"
+      },
+      "GET": {
+        "500": "An error occurred while trying to get a desk"
+      },
+      "LIST": {
+        "500": "An error occurred while trying to list desks"
+      },
+      "PUT": {
+        "500": "An error occurred while trying to update a desk"
+      },
+      "DELETE": {
+        "500": "An error occurred while trying to delete a desk"
+      }
+    },
+    "attendances": {
+      "404": "Attendance not found",
+      "409": "Attendance already existing in the database",
+      "POST": {
+        "500": "An error occurred while trying to create an attendance"
+      },
+      "GET": {
+        "500": "An error occurred while trying to get an attendance"
+      },
+      "LIST": {
+        "500": "An error occurred while trying to list attendances"
+      },
+      "PUT": {
+        "500": "An error occurred while trying to update an attendance"
+      },
+      "DELETE": {
+        "500": "An error occurred while trying to delete an attendance"
+      },
+      "code": {
+        "404": "Invalid code",
+        "500": "An error occurred while trying to verify the attendance"
+      }
+    },
+    "dialogFlow": {
+      "POST": {
+        "500": "An error occurred while trying use the dialog flow"
+      },
+      "intentSettings": {
+        "404": "DialogFlow intent configuration not found",
+        "409": "DialogFlow intent configuration already existing in the database",
+        "500": "An error occurred when trying to use the dialogFlow intent configuration module",
+        "POST": {
+          "500": "An error occurred when trying to add a configuration of a dialogFlow intent"
+        },
+        "PUT": {
+          "500": "An error occurred when trying to update a configuration of a dialogFlow intent"
+        },
+        "LIST": {
+          "500": "An error occurred when trying to list configurations of a dialogFlow intent"
+        },
+        "GET": {
+          "500": "An error occurred when trying to get a configuration of a dialogFlow intent"
+        },
+        "DELETE": {
+          "500": "An error occurred when trying to delete a configuration of a dialogFlow intent"
+        }
+      }
+    },
+    "rating": {
+      "404": "Rating not found",
+      "409": "Rating already existing in the database",
+      "POST": {
+        "500": "An error occurred while trying to create a rating"
+      },
+      "GET": {
+        "500": "An error occurred while trying to get a rating"
+      },
+      "LIST": {
+        "500": "An error occurred while trying to list ratings"
+      },
+      "PUT": {
+        "500": "An error occurred while trying to update a rating"
+      },
+      "DELETE": {
+        "500": "An error occurred while trying to delete a rating"
+      }
+    }
+  }
+}
